@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>  
+	<title>NikhilAgro</title>
+	<meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="css/style.css" rel="stylesheet"/>
+
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.19/angular-ui-router.min.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+
+
+<!-- This is home state -->
+<script type="text/javascript" src="../modules/home/index.js"></script>
+<script type="text/javascript" src="../modules/home/controller/controller.js"></script>
+ 
+<!-- This is blogs state -->
+ <script type="text/javascript" src="../modules/blogs/index.js"></script>
+<script type="text/javascript" src="../modules/blogs/controller/controller.js"></script>
+
+<!-- This is ask state -->
+<script type="text/javascript" src="../modules/ask/index.js"></script>
+<script type="text/javascript" src="../modules/ask/controller/controller.js"></script>
+ 
+<!-- This is admin state -->
+<script type="text/javascript" src="../modules/admin/index.js"></script>
+<script type="text/javascript" src="../modules/admin/controller/controller.js"></script>
+ 
+ <!-- this is about state -->
+<script type="text/javascript" src="../modules/about/index.js"></script>
+<script type="text/javascript" src="../modules/about/controller/controller.js"></script>
+ 
+
+
+<style>
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffc34d;
+    color: white;
+    text-align: right;
+}
+nav-link{
+  float: right;
+}
+</style>
+
+</head>
+<body ng-app="myApp">
+ <div class="header">
+ 
+ </div>
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="true" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+         </button>
+       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <a href="#!/app/add"> <img src="/img/leaf-icon.png" href="#!/app/add" style="width:40px;"></a>
+           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+               <li class="nav-item active">
+                  <a class="nav-link" href="#!/app/add">Home <span class="sr-only"></span></a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#!/app/blogs">Blogs</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#!/app/ask">Ask Question</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#!/app/admin">Admin</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="#!/app/about">About</a>
+               </li>
+           </ul>
+       </div>
+     </nav>
+
+      <br>
+      <div ui-view>
+      
+      </div>
+<div class="footer">
+  <p style="margin-right: 15px">2018 © Rommies</p> 
+</div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+/*home css*/
+.body{
+	background-color: #C71585;
+}
+
+
+.bag {
+	  background-image: url('.././img/apple.jpeg');
+	  color: #000000;
+	  background-attachment: fixed;
+	  
+
+}
+.text-center{
+	 margin-top: 90px;
+}
+.user{
+	border-right: 1px solid black;
+}
+
+.card-body-one{
+	background-image: url('.././img/agriapple.jpg');
+
+}
+.card-body{
+	background-color: #006666;
+}
+.card-body-three{
+	    
+}
+.card-body-two{
+	   
+}
+.card-title{
+	color: black;
+}

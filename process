@@ -1,0 +1,229 @@
+ashpak@ashpak:~$ cd agro/
+ashpak@ashpak:~/agro$ ls
+client  server
+ashpak@ashpak:~/agro$ npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg> --save` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+name: (agro) 
+version: (1.0.0) 
+description: 
+entry point: (index.js) server.js
+test command: 
+git repository: 
+keywords: 
+author: 
+license: (ISC) 
+About to write to /home/ashpak/agro/package.json:
+
+{
+  "name": "agro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this ok? (yes) 
+ashpak@ashpak:~/agro$ ls
+client  package.json  server
+ashpak@ashpak:~/agro$ npm install express --save
+agro@1.0.0 /home/ashpak/agro
+`-- express@4.16.3 
+  +-- accepts@1.3.5 
+  | +-- mime-types@2.1.19 
+  | | `-- mime-db@1.35.0 
+  | `-- negotiator@0.6.1 
+  +-- array-flatten@1.1.1 
+  +-- body-parser@1.18.2 
+  | +-- bytes@3.0.0 
+  | +-- http-errors@1.6.3 
+  | | `-- inherits@2.0.3 
+  | +-- iconv-lite@0.4.19 
+  | `-- raw-body@2.3.2 
+  |   `-- http-errors@1.6.2 
+  |     +-- depd@1.1.1 
+  |     `-- setprototypeof@1.0.3 
+  +-- content-disposition@0.5.2 
+  +-- content-type@1.0.4 
+  +-- cookie@0.3.1 
+  +-- cookie-signature@1.0.6 
+  +-- debug@2.6.9 
+  | `-- ms@2.0.0 
+  +-- depd@1.1.2 
+  +-- encodeurl@1.0.2 
+  +-- escape-html@1.0.3 
+  +-- etag@1.8.1 
+  +-- finalhandler@1.1.1 
+  | `-- unpipe@1.0.0 
+  +-- fresh@0.5.2 
+  +-- merge-descriptors@1.0.1 
+  +-- methods@1.1.2 
+  +-- on-finished@2.3.0 
+  | `-- ee-first@1.1.1 
+  +-- parseurl@1.3.2 
+  +-- path-to-regexp@0.1.7 
+  +-- proxy-addr@2.0.4 
+  | +-- forwarded@0.1.2 
+  | `-- ipaddr.js@1.8.0 
+  +-- qs@6.5.1 
+  +-- range-parser@1.2.0 
+  +-- safe-buffer@5.1.1 
+  +-- send@0.16.2 
+  | +-- destroy@1.0.4 
+  | `-- mime@1.4.1 
+  +-- serve-static@1.13.2 
+  +-- setprototypeof@1.1.0 
+  +-- statuses@1.4.0 
+  +-- type-is@1.6.16 
+  | `-- media-typer@0.3.0 
+  +-- utils-merge@1.0.1 
+  `-- vary@1.1.2 
+
+npm WARN agro@1.0.0 No description
+npm WARN agro@1.0.0 No repository field.
+ashpak@ashpak:~/agro$ npm install mongoose --save
+agro@1.0.0 /home/ashpak/agro
+`-- mongoose@5.2.7 
+  +-- async@2.6.1 
+  | `-- lodash@4.17.10 
+  +-- bson@1.0.9 
+  +-- kareem@2.2.1 
+  +-- lodash.get@4.4.2 
+  +-- mongodb@3.1.1 
+  +-- mongodb-core@3.1.0 
+  | +-- require_optional@1.0.1 
+  | | +-- resolve-from@2.0.0 
+  | | `-- semver@5.5.0 
+  | `-- saslprep@1.0.1 
+  +-- mongoose-legacy-pluralize@1.0.2 
+  +-- mpath@0.4.1 
+  +-- mquery@3.1.2 
+  | +-- bluebird@3.5.1 
+  | `-- debug@3.1.0 
+  +-- regexp-clone@0.0.1 
+  `-- sliced@1.0.1 
+
+npm WARN agro@1.0.0 No description
+npm WARN agro@1.0.0 No repository field.
+ashpak@ashpak:~/agro$ ls
+client  node_modules  package.json  server
+ashpak@ashpak:~/agro$ npm install body-parser --save
+depd@1.1.1 node_modules/raw-body/node_modules/depd -> node_modules/express/node_modules/raw-body/node_modules/depd
+setprototypeof@1.0.3 node_modules/raw-body/node_modules/setprototypeof -> node_modules/express/node_modules/raw-body/node_modules/setprototypeof
+http-errors@1.6.2 node_modules/raw-body/node_modules/http-errors -> node_modules/express/node_modules/raw-body/node_modules/http-errors
+agro@1.0.0 /home/ashpak/agro
++-- body-parser@1.18.3 
+| +-- iconv-lite@0.4.23 
+| | `-- safer-buffer@2.1.2 
+| +-- qs@6.5.2 
+| `-- raw-body@2.3.3 
+`-- express@4.16.3
+  `-- body-parser@1.18.2 
+    +-- iconv-lite@0.4.19 
+    `-- raw-body@2.3.2 
+
+npm WARN agro@1.0.0 No description
+npm WARN agro@1.0.0 No repository field.
+ashpak@ashpak:~/agro$ npm install bower --save
+npm WARN deprecated bower@1.8.4: We don't recommend using Bower for new projects. Please consider Yarn and Webpack or Parcel. You can read how to migrate legacy project here: https://bower.io/blog/2017/how-to-migrate-away-from-bower/
+agro@1.0.0 /home/ashpak/agro
+`-- bower@1.8.4 
+
+npm WARN agro@1.0.0 No description
+npm WARN agro@1.0.0 No repository field.
+ashpak@ashpak:~/agro$ bower init
+? name agro
+? description 
+? main file server.js
+? keywords 
+? authors 
+? license ISC
+? homepage 
+? set currently installed components as dependencies? Yes
+? add commonly ignored files to ignore list? Yes
+? would you like to mark this package as private which prevents it from being accidentally published to the registry? Yes
+
+{
+  name: 'agro',
+  description: '',
+  main: 'server.js',
+  license: 'ISC',
+  homepage: '',
+  private: true,
+  ignore: [
+    '**/.*',
+    'node_modules',
+    'bower_components',
+    'test',
+    'tests'
+  ]
+}
+
+? Looks good? Yes
+ashpak@ashpak:~/agro$ 
+ashpak@ashpak:~/agro$ ls
+bower.json  client  node_modules  package.json  server
+ashpak@ashpak:~/agro$ bower install angularjs --save
+/usr/lib/node_modules/bower/lib/node_modules/bower-config/lib/util/rc.js:71
+        throw error;
+        ^
+
+Error: Unable to parse /home/ashpak/agro/.bowerrc: Unexpected token p in JSON at position 4
+    at parse (/usr/lib/node_modules/bower/lib/node_modules/bower-config/lib/util/rc.js:64:21)
+    at /usr/lib/node_modules/bower/lib/node_modules/bower-config/lib/util/rc.js:95:20
+    at Array.forEach (native)
+    at json (/usr/lib/node_modules/bower/lib/node_modules/bower-config/lib/util/rc.js:87:14)
+    at rc (/usr/lib/node_modules/bower/lib/node_modules/bower-config/lib/util/rc.js:34:13)
+    at Config.load (/usr/lib/node_modules/bower/lib/node_modules/bower-config/lib/Config.js:16:20)
+    at readCachedConfig (/usr/lib/node_modules/bower/lib/config.js:15:39)
+    at defaultConfig (/usr/lib/node_modules/bower/lib/config.js:11:12)
+    at Object.<anonymous> (/usr/lib/node_modules/bower/lib/index.js:16:32)
+    at Module._compile (module.js:577:32)
+ashpak@ashpak:~/agro$ bower install angularjs --save
+bower cached        https://github.com/angular/bower-angular.git#1.7.2
+bower validate      1.7.2 against https://github.com/angular/bower-angular.git#*
+bower new           version for https://github.com/angular/bower-angular.git#*
+bower resolve       https://github.com/angular/bower-angular.git#*
+bower download      https://github.com/angular/bower-angular/archive/v1.7.3.tar.gz
+bower extract       angularjs#* archive.tar.gz
+bower resolved      https://github.com/angular/bower-angular.git#1.7.3
+bower install       angular#1.7.3
+
+angular#1.7.3 client/lib/angular
+ashpak@ashpak:~/agro$ bower install angular-ui-router --save
+bower cached        https://github.com/angular-ui/angular-ui-router-bower.git#1.0.3
+bower validate      1.0.3 against https://github.com/angular-ui/angular-ui-router-bower.git#*
+bower new           version for https://github.com/angular-ui/angular-ui-router-bower.git#*
+bower resolve       https://github.com/angular-ui/angular-ui-router-bower.git#*
+bower download      https://github.com/angular-ui/angular-ui-router-bower/archive/1.0.19.tar.gz
+bower extract       angular-ui-router#* archive.tar.gz
+bower resolved      https://github.com/angular-ui/angular-ui-router-bower.git#1.0.19
+bower install       angular-ui-router#1.0.19
+
+angular-ui-router#1.0.19 client/lib/angular-ui-router
+└── angular#1.7.3
+ashpak@ashpak:~/agro$ bower install bootstrap --save
+bower cached        https://github.com/twbs/bootstrap.git#3.3.7
+bower validate      3.3.7 against https://github.com/twbs/bootstrap.git#*
+bower new           version for https://github.com/twbs/bootstrap.git#*
+bower resolve       https://github.com/twbs/bootstrap.git#*
+bower download      https://github.com/twbs/bootstrap/archive/v4.1.3.tar.gz
+bower extract       bootstrap#* archive.tar.gz
+bower resolved      https://github.com/twbs/bootstrap.git#4.1.3
+bower install       bootstrap#4.1.3
+
+bootstrap#4.1.3 client/lib/bootstrap
+
